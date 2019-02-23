@@ -1,10 +1,10 @@
 #Anthony Zerka
 #Capstone Project - Part 1
 
-import pyshark
+# import pyshark
 import socket
 import textwrap
-
+import ctypes
 
 # cap = pyshark.LiveCapture(output_file = "pyshark.pcap")
 # cap.sniff(timeout=20)
@@ -16,7 +16,7 @@ import textwrap
 
 
 
-
+ctypes.windll.shell32.IsUserAnAdmin()
 
 #Unpack ethernet frame (AA:BB:CC:DD:EE:FF)
 def ethernet_frame(data):
